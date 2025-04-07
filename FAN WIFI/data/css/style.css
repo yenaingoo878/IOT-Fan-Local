@@ -1,0 +1,126 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+.spin1{
+    animation: spin 1s linear infinite;
+}
+.spin2{
+    animation: spin 0.7s linear infinite;
+}
+.spin3{
+    animation: spin 0.5s linear infinite;
+}
+.fan{
+    display: flex;
+}
+.fan>img{
+    position: sticky;
+    width: 300px;
+    height: 80vh;
+    }
+.button-list{
+    display: flex;
+    height: 20vh;
+    width: 85%;
+    justify-content: space-between;
+} 
+.btn {
+    display: flex;
+    width: 5rem;
+    height: 6rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #0011ff;
+    background-color: #f8f8fd;
+    border-radius: 50em;
+    border: 6px solid #9ACBD0;
+    box-shadow: 0px 8px #6775f5;
+  }
+.active {
+    position: relative;
+    top: 8px;
+    border: 6px solid #6775f5;
+    background-color: #9ACBD0;
+    box-shadow: 8px ;
+}
+
+@media only screen and (max-width: 766px) {
+.fan{
+    position: relative;
+    left: 0;
+    right: 0;
+}
+.fan>img{
+    position: fixed;
+    width: 30vh;
+    height: 30vh;
+    left: 0;
+    right: 0;
+    bottom: 10rem;
+    top: 0;
+    
+    }
+.fan-bg{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50%;
+    background-color: #E4EFE7;
+    opacity: 70%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10rem;       
+    top: 0;
+}
+.speed{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+} 
+}
+
+@media only screen and (min-width: 768px) {
+.fan{
+    position: relative;
+    right: 0;
+    left: 0;
+}
+.fan>img{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.fan-bg{
+    position: fixed;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    background-color: #E4EFE7;
+    opacity: 70%;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 10rem;      
+}
+.speed{
+    position: fixed;
+    bottom: 0px;
+    width: 80vh;
+    left: 0;
+    right: 0;
+}
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IOT_FAN</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="fan">
+        <p class="fan-bg"></p>
+        <img class="image" id="spinner" src="./images/logo.svg" alt="">
+    </div>
+    <div class="speed">
+        <ul id="speed" class="button-list" >
+            <li class="btn" data-speed="0"  onclick="toggle(0)"><img class="power" src="./images/power.svg" alt=""></li>
+            <li class="btn" data-speed="1" onclick="toggle(1)"><p>1</p></li>
+            <li class="btn" data-speed="2" onclick="toggle(2)"><p>2</p></li>
+            <li class="btn" data-speed="3" onclick="toggle(3)"><p>3</p></li>
+        </ul>
+    </div>
+</body>
+<script src="./script/socket.js"></script>
+</html>
